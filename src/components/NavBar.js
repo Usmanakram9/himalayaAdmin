@@ -80,27 +80,27 @@ const NavBar = () => {
      Menu
    </button>
    
-   <header className="px-1 md:px-4 py-2 my-4 md:my-0 shadow bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500 from-indigo-500 via-purple-500 to-pink-500 rounded-md p-3">
+   <header className="px-1 md:px-4 py-2 my-4 md:my-0 shadow bg-black rounded-md p-3">
       <div className="flex justify-between">
 
         
         
 
         <div className="flex items-center">
-          <button data-messages className="p-1 mr-1 focus:outline-none  hover:bg-gray-200 hover:rounded-md" type="button">
-          <FontAwesomeIcon icon={faBell } className="w-3 h-3 mr-1 md:w-5 md:h-5" />
+          <button data-messages className="p-1 mr-1 focus:outline-none hover:bg-red-400 hover:rounded-md" type="button">
+          <FontAwesomeIcon icon={faBell } className="w-3 h-3 mr-1 md:w-5 md:h-5 text-white" />
           </button>
-          <button data-notifications className="p-1 mr-1 focus:outline-none hover:bg-gray-200 hover:rounded-md" type="button">
-            <FontAwesomeIcon icon={faEnvelope } className='w-3 h-3 mr-1 md:w-5 md:h-5' />
+          <button data-notifications className="p-1 mr-1 focus:outline-none hover:bg-red-400 hover:rounded-md" type="button">
+            <FontAwesomeIcon icon={faEnvelope } className='w-3 h-3 mr-1 md:w-5 md:h-5 text-white' />
           </button>
           {isDropdownOpen && (
            <>
-               <button data-messages className="p-1 mr-1 focus:outline-none text-xs md:text-base hover:bg-gray-200 hover:rounded-md" type="button">
-          <FontAwesomeIcon icon={faUser } className="w-3 h-3 mr-1 md:w-5 md:h-5" />
+               <button data-messages className="p-1 mr-1 focus:outline-none text-xs text-white md:text-white hover:bg-red-400 hover:rounded-md" type="button">
+          <FontAwesomeIcon icon={faUser } className="w-3 h-3 mr-1 md:w-5 md:h-5 text-white" />
          User Profile
           </button>
-          <button data-notifications className="p-1 mr-1 focus:outline-none text-xs md:text-base hover:bg-gray-200 hover:rounded-md" type="button">
-            <FontAwesomeIcon icon={faSignOutAlt } className='w-3 h-3 mr-1 md:w-5 md:h-5' />
+          <button data-notifications className="p-1 mr-1 focus:outline-none text-xs text-white md:text-white hover:bg-red-400 hover:rounded-md" type="button">
+            <FontAwesomeIcon icon={faSignOutAlt } className='w-3 h-3 mr-1 md:w-5 md:h-5 text-white' />
             Logout
           </button>
           </>
